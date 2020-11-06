@@ -13,7 +13,7 @@ for root, dirs, files in os.walk(cwd):
       path = os.path.join(root, file)
       probe = ffmpeg.probe(path)
       video_streams = [stream for stream in probe["streams"] if stream["codec_type"] == "video"]
-      filenames.append(file + ' - ' + str(video_streams[0]['coded_width']) + "x" + str(video_streams[0]['coded_height']))
+      filenames.append(file + ' - ' + str(video_streams[0]['width']) + "x" + str(video_streams[0]['height']))
 
 filenames.sort()
 
