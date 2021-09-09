@@ -1,5 +1,5 @@
-# python-ffmpeg-resolution-printer
-A helper utility in python to print video resolution width/height for video files.
+# python-ffmpeg-scripts
+A collection of helper utilities in python for manipulating media files.
 
 This script relies in `ffmpeg`.
 
